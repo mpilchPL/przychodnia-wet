@@ -1,0 +1,118 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 09/11/2020 18:28
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-nail-clipper:before { content: "\f100"; }
+.flaticon-injury:before { content: "\f101"; }
+.flaticon-veterinary:before { content: "\f102"; }
+.flaticon-shower:before { content: "\f103"; }
+.flaticon-cat:before { content: "\f104"; }
+.flaticon-cat-1:before { content: "\f105"; }
+.flaticon-eye:before { content: "\f106"; }
+.flaticon-feeding-bottle:before { content: "\f107"; }
+.flaticon-microchip:before { content: "\f108"; }
+.flaticon-brush-teeth:before { content: "\f109"; }
+.flaticon-cat-house:before { content: "\f10a"; }
+.flaticon-scale:before { content: "\f10b"; }
+.flaticon-pet-brush:before { content: "\f10c"; }
+.flaticon-water-dispenser:before { content: "\f10d"; }
+.flaticon-shampoo:before { content: "\f10e"; }
+.flaticon-pills:before { content: "\f10f"; }
+.flaticon-brush:before { content: "\f110"; }
+.flaticon-cat-2:before { content: "\f111"; }
+.flaticon-pet-bowl:before { content: "\f112"; }
+.flaticon-meow:before { content: "\f113"; }
+.flaticon-fish-bowl:before { content: "\f114"; }
+.flaticon-test-tube:before { content: "\f115"; }
+.flaticon-drugs:before { content: "\f116"; }
+.flaticon-pills-1:before { content: "\f117"; }
+.flaticon-microscope:before { content: "\f118"; }
+.flaticon-paw:before { content: "\f119"; }
+.flaticon-dog-in-front-of-a-man:before { content: "\f11a"; }
+.flaticon-dog:before { content: "\f11b"; }
+.flaticon-veterinary-1:before { content: "\f11c"; }
+.flaticon-bone:before { content: "\f11d"; }
+.flaticon-fish:before { content: "\f11e"; }
+.flaticon-medical-report:before { content: "\f11f"; }
+.flaticon-cow-silhouette:before { content: "\f120"; }
+.flaticon-surgery-tools:before { content: "\f121"; }
+.flaticon-surgery:before { content: "\f122"; }
+.flaticon-surgery-1:before { content: "\f123"; }
+.flaticon-blood-transfusion:before { content: "\f124"; }
+.flaticon-passport:before { content: "\f125"; }
+.flaticon-sonography:before { content: "\f126"; }
+    
+    $font-Flaticon-nail-clipper: "\f100";
+    $font-Flaticon-injury: "\f101";
+    $font-Flaticon-veterinary: "\f102";
+    $font-Flaticon-shower: "\f103";
+    $font-Flaticon-cat: "\f104";
+    $font-Flaticon-cat-1: "\f105";
+    $font-Flaticon-eye: "\f106";
+    $font-Flaticon-feeding-bottle: "\f107";
+    $font-Flaticon-microchip: "\f108";
+    $font-Flaticon-brush-teeth: "\f109";
+    $font-Flaticon-cat-house: "\f10a";
+    $font-Flaticon-scale: "\f10b";
+    $font-Flaticon-pet-brush: "\f10c";
+    $font-Flaticon-water-dispenser: "\f10d";
+    $font-Flaticon-shampoo: "\f10e";
+    $font-Flaticon-pills: "\f10f";
+    $font-Flaticon-brush: "\f110";
+    $font-Flaticon-cat-2: "\f111";
+    $font-Flaticon-pet-bowl: "\f112";
+    $font-Flaticon-meow: "\f113";
+    $font-Flaticon-fish-bowl: "\f114";
+    $font-Flaticon-test-tube: "\f115";
+    $font-Flaticon-drugs: "\f116";
+    $font-Flaticon-pills-1: "\f117";
+    $font-Flaticon-microscope: "\f118";
+    $font-Flaticon-paw: "\f119";
+    $font-Flaticon-dog-in-front-of-a-man: "\f11a";
+    $font-Flaticon-dog: "\f11b";
+    $font-Flaticon-veterinary-1: "\f11c";
+    $font-Flaticon-bone: "\f11d";
+    $font-Flaticon-fish: "\f11e";
+    $font-Flaticon-medical-report: "\f11f";
+    $font-Flaticon-cow-silhouette: "\f120";
+    $font-Flaticon-surgery-tools: "\f121";
+    $font-Flaticon-surgery: "\f122";
+    $font-Flaticon-surgery-1: "\f123";
+    $font-Flaticon-blood-transfusion: "\f124";
+    $font-Flaticon-passport: "\f125";
+    $font-Flaticon-sonography: "\f126";

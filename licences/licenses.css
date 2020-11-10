@@ -1,0 +1,8 @@
+.license {
+    border-bottom: 2px solid black;
+}
+
+.license h3 {
+    text-transform: uppercase;
+    text-align: center;
+}
