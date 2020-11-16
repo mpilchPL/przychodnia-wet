@@ -22,13 +22,18 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <!--### <a href="#" id="scrollup" class="scrollup"></a> ###-->
     
     <header>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark b-blue">
-            <a class="navbar-brand mr-5 text-center px-2" href="index.html">
-                <img class="img-small" src="img/logo.png" alt="">
-                GoodVet
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark b-maintheme py-0 px-2">
+            <a class="navbar-brand mr-5 text-center px-2 py-0" href="index.html">
+                <!-- <img class="img-small" src="img/logo.png" alt=""> -->
+                <div class="logoContainer">
+                    <i class="flaticon-dog-in-front-of-a-man logo display-block"></i>
+                    <p class="logo display-block">GoodVet</p>
+
+                    <!--### TODO poprawic navbara zeby byl wezszy w przegladaniu a na starcie szerszy znaczy wyzszy ###-->
+                </div>
+                    
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,7 +60,7 @@
     </header>
 
     <main>
-        <div class="container sliderContainer">
+        <div class="container-fluid sliderContainer">
             <!--### TOP SLIDER ###-->
             <div class="row flex-fill">
                 <div id="slider" class="carousel slide col-12 sectionA" data-ride="carousel">
@@ -103,13 +108,13 @@
                   </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container shadow">
             <header>
-                <div class="row sectionA" id="aboutUs">
+                <div class="row sectionA b-whitey" id="aboutUs">
                     <div class="col-12 px-sm-3 px-lg-5 my-5">
                         <div id="abtUs">
                             <h1>O przychodni słów pare</h1>
-                            <div class="separator-blue"></div>
+                            <div class="separator-dark"></div>
                             <p class="p-1 px-lg-5">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                 Cras fringilla turpis et magna imperdiet, 
@@ -131,7 +136,7 @@
             </header>
             
             <section>
-                <div class="row sectionB pb-5" id="services">
+                <div class="row sectionB b-maintheme pb-5" id="services">
                     <div class="col-12 px-lg-5 my-5">
                         <h1>Zakres usług</h1>
                         <div class="separator-white"></div>
@@ -140,7 +145,8 @@
                         <div class="row">
                             <div class="col-lg-6 servicesItem d-flex">
                                 <i class="flaticon-paw flex-shrink-1 vertical-center"></i>
-                                <p class="p-1 w-100 vertical-center">
+                                <div class="separator-vertical-light"></div>
+                                <p class="w-100 vertical-center">
                                     Usługa 1 - Lorem ipsum dolor sit amet, 
                                     consectetur adipiscing elit. 
                                     Donec id erat ipsum.
@@ -149,7 +155,8 @@
 
                             <div class="col-lg-6 servicesItem d-flex">
                                 <i class="flaticon-shower flex-shrink-1 vertical-center"></i>
-                                <p class="p-1 w-100 vertical-center">
+                                <div class="separator-vertical-light"></div>
+                                <p class="w-100 vertical-center">
                                     Usługa 2 - Lorem ipsum dolor sit amet, 
                                     consectetur adipiscing elit. 
                                     Donec id erat ipsum.
@@ -158,7 +165,8 @@
 
                             <div class="col-lg-6 servicesItem d-flex">
                                 <i class="flaticon-veterinary flex-shrink-1 vertical-center"></i>
-                                <p class="p-1 w-100 vertical-center">
+                                <div class="separator-vertical-light"></div>
+                                <p class="w-100 vertical-center">
                                     Usługa 3 - Lorem ipsum dolor sit amet, 
                                     consectetur adipiscing elit. 
                                     Donec id erat ipsum.
@@ -167,7 +175,8 @@
 
                             <div class="col-lg-6 servicesItem d-flex">
                                 <i class="flaticon-surgery-tools flex-shrink-1 vertical-center"></i>
-                                <p class="p-1 w-100 vertical-center">
+                                <div class="separator-vertical-light"></div>
+                                <p class="w-100 vertical-center">
                                     Usługa 4 - Lorem ipsum dolor sit amet, 
                                     consectetur adipiscing elit. 
                                     Donec id erat ipsum.
@@ -176,7 +185,8 @@
 
                             <div class="col-lg-6 servicesItem d-flex">
                                 <i class="flaticon-blood-transfusion flex-shrink-1 vertical-center"></i>
-                                <p class="p-1 w-100 vertical-center">
+                                <div class="separator-vertical-light"></div>
+                                <p class="w-100 vertical-center">
                                     Usługa 5 - Lorem ipsum dolor sit amet, 
                                     consectetur adipiscing elit. 
                                     Donec id erat ipsum.
@@ -185,7 +195,8 @@
 
                             <div class="col-lg-6 servicesItem d-flex">
                                 <i class="flaticon-medical-report flex-shrink-1 vertical-center"></i>
-                                <p class="p-1 w-100 vertical-center">
+                                <div class="separator-vertical-light"></div>
+                                <p class="w-100 vertical-center">
                                     Usługa 6 - Lorem ipsum dolor sit amet, 
                                     consectetur adipiscing elit. 
                                     Donec id erat ipsum.
@@ -194,7 +205,8 @@
 
                             <div class="col-lg-6 servicesItem d-flex">
                                 <i class="flaticon-microscope flex-shrink-1 vertical-center"></i>
-                                <p class="p-1 w-100 vertical-center">
+                                <div class="separator-vertical-light"></div>
+                                <p class="w-100 vertical-center">
                                     Usługa 7 - Lorem ipsum dolor sit amet, 
                                     consectetur adipiscing elit. 
                                     Donec id erat ipsum.
@@ -203,7 +215,8 @@
 
                             <div class="col-lg-6 servicesItem d-flex">
                                 <i class="flaticon-pills-1 flex-shrink-1 vertical-center"></i>
-                                <p class="p-1 w-100 vertical-center">
+                                <div class="separator-vertical-light"></div>
+                                <p class="w-100 vertical-center">
                                     Usługa 8 - Lorem ipsum dolor sit amet, 
                                     consectetur adipiscing elit. 
                                     Donec id erat ipsum.
@@ -212,7 +225,8 @@
 
                             <div class="col-lg-6 servicesItem d-flex">
                                 <i class="flaticon-nail-clipper flex-shrink-1 vertical-center"></i>
-                                <p class="p-1 w-100 vertical-center">
+                                <div class="separator-vertical-light"></div>
+                                <p class="w-100 vertical-center">
                                     Usługa 9 - Lorem ipsum dolor sit amet, 
                                     consectetur adipiscing elit. 
                                     Donec id erat ipsum.
@@ -221,7 +235,8 @@
 
                             <div class="col-lg-6 servicesItem d-flex">
                                 <i class="flaticon-injury flex-shrink-1 vertical-center"></i>
-                                <p class="p-1 w-100 vertical-center">
+                                <div class="separator-vertical-light"></div>
+                                <p class="w-100 vertical-center">
                                     Usługa 10 - Lorem ipsum dolor sit amet, 
                                     consectetur adipiscing elit. 
                                     Donec id erat ipsum.
@@ -230,7 +245,8 @@
 
                             <div class="col-lg-6 servicesItem d-flex">
                                 <i class="flaticon-passport flex-shrink-1 vertical-center"></i>
-                                <p class="p-1 w-100 vertical-center">
+                                <div class="separator-vertical-light"></div>
+                                <p class="w-100 vertical-center">
                                     Usługa 11 - Lorem ipsum dolor sit amet, 
                                     consectetur adipiscing elit. 
                                     Donec id erat ipsum.
@@ -239,7 +255,8 @@
 
                             <div class="col-lg-6 servicesItem d-flex">
                                 <i class="flaticon-bone flex-shrink-1 vertical-center"></i>
-                                <p class="p-1 w-100 vertical-center">
+                                <div class="separator-vertical-light"></div>
+                                <p class="w-100 vertical-center">
                                     Usługa 12 - Lorem ipsum dolor sit amet, 
                                     consectetur adipiscing elit. 
                                     Donec id erat ipsum.
@@ -253,14 +270,15 @@
             </section>
             
             <section>
-                <div class="row sectionA" id="doctors">
+                <div class="row sectionA b-whitey" id="doctors">
+                    
                     <div class="col-12 px-lg-5 my-5">
                         <h1>Nasi specjaliści</h1>
-                        <div class="separator-blue"></div>
+                        <div class="separator-dark"></div>
                     </div>
                     
                     <div class="col-lg-4 px-0 px-lg-2 my-2 mx-lg-0 mx-sm-5">
-                        <div class="doc p-2">
+                        <div class="doc p-2" id="nowakanna">
     
                             <div class="docImg mx-auto pb-1">
                                 <img class="img-fluid" src="img/female.png" alt="">
@@ -269,18 +287,77 @@
                             <div class="description">
                                 <h2>Anna Nowak</h2>
                                 <h2>Lekarz Weterynarii</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                    Donec id erat ipsum. Ut feugiat, nisl in congue pellentesque, 
-                                    nibh tellus efficitur arcu, ac sagittis purus ex vel tellus.
-                                </p>
+                                <div class="d-flex docInfo w-100">
+                                    <div class="docIcon" data-toggle="collapse" data-target="#phone" aria-expanded="false" aria-controls="collapsephone">
+                                        <i class="flaticon-phone"></i>
+                                    </div>
+                                    <div class="docIcon button" onclick="location.href='mailto:xyz@abc.com';">
+                                        <i class="flaticon-message"></i>
+                                    </div>
+                                    <div class="docIcon" data-toggle="collapse" data-target="#calendar" aria-expanded="false" aria-controls="collapseinfo">
+                                        <i class="flaticon-calendar"></i>
+                                    </div>
+                                    <div class="docIcon" data-toggle="collapse" data-target="#info" aria-expanded="false" aria-controls="collapseinfo">
+                                        <i class="flaticon-info"></i>
+                                    </div>
+                                </div>
+                                <div class="w-100">
+                                    <div class="collapse" id="phone">
+                                        <div class="card card-body">
+                                            <p class="text-center">222 333 444</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="collapse" id="info">
+                                        <div class="card card-body">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                                Donec id erat ipsum. Ut feugiat, nisl in congue pellentesque, 
+                                                nibh tellus efficitur arcu, ac sagittis purus ex vel tellus.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="collapse" id="calendar">
+                                        <div class="card card-body">
+                                            <div class="d-flex">
+                                                <div class="calendarDay">Poniedziałek</div>
+                                                <div class="calendarWorkingHours pn">8:00 - 15:00</div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="calendarDay">Wtorek</div>
+                                                <div class="calendarWorkingHours pn">8:00 - 15:00</div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="calendarDay">Środa</div>
+                                                <div class="calendarWorkingHours pn">8:00 - 15:00</div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="calendarDay">Czwartek</div>
+                                                <div class="calendarWorkingHours pn">8:00 - 15:00</div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="calendarDay">Piątek</div>
+                                                <div class="calendarWorkingHours pn">8:00 - 15:00</div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="calendarDay">Sobota</div>
+                                                <div class="calendarWorkingHours pn">8:00 - 15:00</div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="calendarDay">Niedziela</div>
+                                                <div class="calendarWorkingHours pn">8:00 - 15:00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
     
                         </div>
                     </div>
 
                     <div class="col-lg-4 px-0 px-lg-2 my-2 mx-lg-0 mx-sm-5">
-                        <div class="doc p-2">
+                        <div class="doc p-2" id="malinowskaHalina">
     
                             <div class="docImg mx-auto pb-1">
                                 <img class="img-fluid" src="img/female.png" alt="">
@@ -289,18 +366,77 @@
                             <div class="description">
                                 <h2>Halina Malinowska</h2>
                                 <h2>Lekarz Weterynarii</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                    Donec id erat ipsum. Ut feugiat, nisl in congue pellentesque, 
-                                    nibh tellus efficitur arcu, ac sagittis purus ex vel tellus.
-                                </p>
+                                <div class="d-flex docInfo w-100">
+                                    <div class="docIcon" data-toggle="collapse" data-target="#phone" aria-expanded="false" aria-controls="collapsephone">
+                                        <i class="flaticon-phone"></i>
+                                    </div>
+                                    <div class="docIcon button" onclick="location.href='mailto:xyz@abc.com';">
+                                        <i class="flaticon-message"></i>
+                                    </div>
+                                    <div class="docIcon" data-toggle="collapse" data-target="#calendar" aria-expanded="false" aria-controls="collapseinfo">
+                                        <i class="flaticon-calendar"></i>
+                                    </div>
+                                    <div class="docIcon" data-toggle="collapse" data-target="#info" aria-expanded="false" aria-controls="collapseinfo">
+                                        <i class="flaticon-info"></i>
+                                    </div>
+                                </div>
+                                <div class="w-100">
+                                    <div class="collapse" id="phone">
+                                        <div class="card card-body">
+                                            <p class="text-center">222 333 444</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="collapse" id="info">
+                                        <div class="card card-body">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                                Donec id erat ipsum. Ut feugiat, nisl in congue pellentesque, 
+                                                nibh tellus efficitur arcu, ac sagittis purus ex vel tellus.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="collapse" id="calendar">
+                                        <div class="card card-body">
+                                            <div class="d-flex">
+                                                <div class="calendarDay">Poniedziałek</div>
+                                                <div class="calendarWorkingHours pn">8:00 - 15:00</div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="calendarDay">Wtorek</div>
+                                                <div class="calendarWorkingHours pn">8:00 - 15:00</div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="calendarDay">Środa</div>
+                                                <div class="calendarWorkingHours pn">8:00 - 15:00</div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="calendarDay">Czwartek</div>
+                                                <div class="calendarWorkingHours pn">8:00 - 15:00</div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="calendarDay">Piątek</div>
+                                                <div class="calendarWorkingHours pn">8:00 - 15:00</div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="calendarDay">Sobota</div>
+                                                <div class="calendarWorkingHours pn">8:00 - 15:00</div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="calendarDay">Niedziela</div>
+                                                <div class="calendarWorkingHours pn">8:00 - 13:00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
     
                         </div>
                     </div>
 
                     <div class="col-lg-4 px-0 px-lg-2 my-2 mx-lg-0 mx-sm-5">
-                        <div class="doc p-2">
+                        <div class="doc p-2" id="kowalskijan">
     
                             <div class="docImg mx-auto pb-1">
                                 <img class="img-fluid" src="img/male.png" alt="">
@@ -309,18 +445,77 @@
                             <div class="description">
                                 <h2>Jan Kowalski</h2>
                                 <h2>Lekarz Weterynarii</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                    Donec id erat ipsum. Ut feugiat, nisl in congue pellentesque, 
-                                    nibh tellus efficitur arcu, ac sagittis purus ex vel tellus.
-                                </p>
+                                <div class="d-flex docInfo w-100">
+                                    <div class="docIcon" data-toggle="collapse" data-target="#phone" aria-expanded="false" aria-controls="collapsephone">
+                                        <i class="flaticon-phone"></i>
+                                    </div>
+                                    <div class="docIcon button" onclick="location.href='mailto:xyz@abc.com';">
+                                        <i class="flaticon-message"></i>
+                                    </div>
+                                    <div class="docIcon" data-toggle="collapse" data-target="#calendar" aria-expanded="false" aria-controls="collapseinfo">
+                                        <i class="flaticon-calendar"></i>
+                                    </div>
+                                    <div class="docIcon" data-toggle="collapse" data-target="#info" aria-expanded="false" aria-controls="collapseinfo">
+                                        <i class="flaticon-info"></i>
+                                    </div>
+                                </div>
+                                <div class="w-100">
+                                    <div class="collapse" id="phone">
+                                        <div class="card card-body">
+                                            <p class="text-center">222 333 444</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="collapse" id="info">
+                                        <div class="card card-body">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                                Donec id erat ipsum. Ut feugiat, nisl in congue pellentesque, 
+                                                nibh tellus efficitur arcu, ac sagittis purus ex vel tellus.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="collapse" id="calendar">
+                                        <div class="card card-body">
+                                            <div class="d-flex">
+                                                <div class="calendarDay">Poniedziałek</div>
+                                                <div class="calendarWorkingHours pn">8:00 - 15:00</div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="calendarDay">Wtorek</div>
+                                                <div class="calendarWorkingHours pn">8:00 - 15:00</div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="calendarDay">Środa</div>
+                                                <div class="calendarWorkingHours pn">8:00 - 15:00</div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="calendarDay">Czwartek</div>
+                                                <div class="calendarWorkingHours pn">8:00 - 15:00</div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="calendarDay">Piątek</div>
+                                                <div class="calendarWorkingHours pn">8:00 - 15:00</div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="calendarDay">Sobota</div>
+                                                <div class="calendarWorkingHours pn">8:00 - 15:00</div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="calendarDay">Niedziela</div>
+                                                <div class="calendarWorkingHours pn">8:00 - 15:00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
     
                         </div>
                     </div>
     
                     <div class="col-lg-4 px-0 px-lg-2 my-2 mx-lg-0 mx-sm-5">
-                        <div class="doc p-2">
+                        <div class="doc p-2" id="nowakbarbara">
     
                             <div class="docImg mx-auto pb-1">
                                 <img class="img-fluid" src="img/female.png" alt="">
@@ -329,18 +524,77 @@
                             <div class="description">
                                 <h2>Barbara Nowak</h2>
                                 <h2>Groomer</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                    Donec id erat ipsum. Ut feugiat, nisl in congue pellentesque, 
-                                    nibh tellus efficitur arcu, ac sagittis purus ex vel tellus.
-                                </p>
+                                <div class="d-flex docInfo w-100">
+                                    <div class="docIcon" data-toggle="collapse" data-target="#phone" aria-expanded="false" aria-controls="collapsephone">
+                                        <i class="flaticon-phone"></i>
+                                    </div>
+                                    <div class="docIcon button" onclick="location.href='mailto:xyz@abc.com';">
+                                        <i class="flaticon-message"></i>
+                                    </div>
+                                    <div class="docIcon" data-toggle="collapse" data-target="#calendar" aria-expanded="false" aria-controls="collapseinfo">
+                                        <i class="flaticon-calendar"></i>
+                                    </div>
+                                    <div class="docIcon" data-toggle="collapse" data-target="#info" aria-expanded="false" aria-controls="collapseinfo">
+                                        <i class="flaticon-info"></i>
+                                    </div>
+                                </div>
+                                <div class="w-100">
+                                    <div class="collapse" id="phone">
+                                        <div class="card card-body">
+                                            <p class="text-center">222 333 444</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="collapse" id="info">
+                                        <div class="card card-body">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                                Donec id erat ipsum. Ut feugiat, nisl in congue pellentesque, 
+                                                nibh tellus efficitur arcu, ac sagittis purus ex vel tellus.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="collapse" id="calendar">
+                                        <div class="card card-body">
+                                            <div class="d-flex">
+                                                <div class="calendarDay">Poniedziałek</div>
+                                                <div class="calendarWorkingHours pn">8:00 - 15:00</div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="calendarDay">Wtorek</div>
+                                                <div class="calendarWorkingHours pn">8:00 - 15:00</div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="calendarDay">Środa</div>
+                                                <div class="calendarWorkingHours pn">8:00 - 15:00</div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="calendarDay">Czwartek</div>
+                                                <div class="calendarWorkingHours pn">8:00 - 15:00</div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="calendarDay">Piątek</div>
+                                                <div class="calendarWorkingHours pn">8:00 - 15:00</div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="calendarDay">Sobota</div>
+                                                <div class="calendarWorkingHours pn">8:00 - 15:00</div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="calendarDay">Niedziela</div>
+                                                <div class="calendarWorkingHours pn">8:00 - 15:00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
     
                         </div>
                     </div>
     
                     <div class="col-lg-4 px-0 px-lg-2 my-2 mx-lg-0 mx-sm-5">
-                        <div class="doc p-2">
+                        <div class="doc p-2" id="adamskiadam">
     
                             <div class="docImg mx-auto pb-1">
                                 <img class="img-fluid" src="img/male.png" alt="">
@@ -349,11 +603,70 @@
                             <div class="description">
                                 <h2>Adam Adamski</h2>
                                 <h2>Groomer</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                    Donec id erat ipsum. Ut feugiat, nisl in congue pellentesque, 
-                                    nibh tellus efficitur arcu, ac sagittis purus ex vel tellus.
-                                </p>
+                                <div class="d-flex docInfo w-100">
+                                    <div class="docIcon" data-toggle="collapse" data-target="#phone" aria-expanded="false" aria-controls="collapsephone">
+                                        <i class="flaticon-phone"></i>
+                                    </div>
+                                    <div class="docIcon button" onclick="location.href='mailto:xyz@abc.com';">
+                                        <i class="flaticon-message"></i>
+                                    </div>
+                                    <div class="docIcon" data-toggle="collapse" data-target="#calendar" aria-expanded="false" aria-controls="collapseinfo">
+                                        <i class="flaticon-calendar"></i>
+                                    </div>
+                                    <div class="docIcon" data-toggle="collapse" data-target="#info" aria-expanded="false" aria-controls="collapseinfo">
+                                        <i class="flaticon-info"></i>
+                                    </div>
+                                </div>
+                                <div class="w-100">
+                                    <div class="collapse" id="phone">
+                                        <div class="card card-body">
+                                            <p class="text-center">222 333 444</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="collapse" id="info">
+                                        <div class="card card-body">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                                Donec id erat ipsum. Ut feugiat, nisl in congue pellentesque, 
+                                                nibh tellus efficitur arcu, ac sagittis purus ex vel tellus.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="collapse" id="calendar">
+                                        <div class="card card-body">
+                                            <div class="d-flex">
+                                                <div class="calendarDay">Poniedziałek</div>
+                                                <div class="calendarWorkingHours pn">8:00 - 15:00</div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="calendarDay">Wtorek</div>
+                                                <div class="calendarWorkingHours pn">8:00 - 15:00</div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="calendarDay">Środa</div>
+                                                <div class="calendarWorkingHours pn">8:00 - 15:00</div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="calendarDay">Czwartek</div>
+                                                <div class="calendarWorkingHours pn">8:00 - 15:00</div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="calendarDay">Piątek</div>
+                                                <div class="calendarWorkingHours pn">8:00 - 15:00</div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="calendarDay">Sobota</div>
+                                                <div class="calendarWorkingHours pn">8:00 - 15:00</div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="calendarDay">Niedziela</div>
+                                                <div class="calendarWorkingHours pn">8:00 - 15:00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
     
                         </div>
@@ -364,20 +677,52 @@
         <footer>
             <div id="map"></div>
             <div class="w-100" id="footer">
-                <div class="container h-100">
-                    <div class="col-12 d-flex text-white h-100">
-                        <div id="address" class="py-2">
-                            <p>asdadads</p>
-                            <p>asdadads</p>
-                            
+                <div class="container-fluid">
+                    <div class="row px-2">
+
+                        <div class="d-flex col-4 py-3 px-2 text-center">
+                            <div id="address">
+                                <p>Przychodnia weterynaryjna GoodVet</p>
+                                <p>ul. Uliczna 1</p>
+                                <p>12-345 Kraków</p>
+                            </div>
+                            <div class="separator-vertical-light"></div>
+                        </div>
+
+                        <div class="d-flex col-4 py-3 px-2 text-center">
+                            <div id="hours">
+                                <p>Godziny otwarcia</p>
+                                <p>Pn - Pt: 8:00 - 18:00</p>
+                                <p>Sobota: 8:00 - 15:00</p>
+                                <p>Niedziela: 8:00 - 15:00</p>
+                            </div>
+                            <div class="separator-vertical-light ml-auto"></div>
+                        </div>
+                        
+                        <div class="col-4 py-3 px-2 text-center">
+                            <p>Kontakt</p>
+                            <div class="d-flex w-100">
+                                <i class="flaticon-phone vertical-center pr-2 ml-auto my-0"></i>
+                                <p class="mr-auto">555 666 777</p>
+                            </div>
+                            <div class="d-flex w-100">
+                                <i class="flaticon-phone vertical-center pr-2 ml-auto my-0"></i>
+                                <p class="mr-auto">666 777 888</p>
+                            </div>
+
+                            <div class="d-flex w-100">
+                                <i class="flaticon-call vertical-center pr-2 ml-auto my-0"></i>
+                                <p class="mr-auto">12 345 67 89</p>
+                            </div>
                             
                         </div>
                     </div>
                 </div>
             </div>
         </footer>
-        <div class="signature">&copy; Copyright Michał Pilch 2020</div>
-        <div class="signature"><a href="licences/licenses.html" target="_blank">Licences</a></div>
+        <div class="signature">
+            <p>&copy; Copyright Michał Pilch 2020 | <a href="licences/licenses.html" target="_blank">Licences</a></p>
+        </div>
     </main>
 
 
@@ -390,5 +735,7 @@
     <script src="scripts/jquery.scrollTo.min.js"></script>
     <script src="scripts/pageScrolling.js"></script>
     <script src="scripts/maps.js"></script>
+    <script src="scripts/transition.js"></script>
+    <script src="scripts/doctorsDataUpdate.js"></script>
 </body>
 </html>

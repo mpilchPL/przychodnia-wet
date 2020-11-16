@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 09/11/2020 18:28
+  	Creation date: 12/11/2020 14:04
   	*/
 
 @font-face {
@@ -69,3 +69,10 @@ margin-left: 20px;
 .flaticon-blood-transfusion:before { content: "\f124"; }
 .flaticon-passport:before { content: "\f125"; }
 .flaticon-sonography:before { content: "\f126"; }
+.flaticon-info:before { content: "\f127"; }
+.flaticon-phone:before { content: "\f128"; }
+.flaticon-call:before { content: "\f129"; }
+.flaticon-files-copy-interface-symbol:before { content: "\f12a"; }
+.flaticon-message:before { content: "\f12b"; }
+.flaticon-calendar:before { content: "\f12c"; }
+.flaticon-facebook-1:before { content: "\f12d"; }

@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 09/11/2020 18:28
+    Creation date: 12/11/2020 14:04
     */
 
     @font-face {
@@ -76,6 +76,13 @@
 .flaticon-blood-transfusion:before { content: "\f124"; }
 .flaticon-passport:before { content: "\f125"; }
 .flaticon-sonography:before { content: "\f126"; }
+.flaticon-info:before { content: "\f127"; }
+.flaticon-phone:before { content: "\f128"; }
+.flaticon-call:before { content: "\f129"; }
+.flaticon-files-copy-interface-symbol:before { content: "\f12a"; }
+.flaticon-message:before { content: "\f12b"; }
+.flaticon-calendar:before { content: "\f12c"; }
+.flaticon-facebook-1:before { content: "\f12d"; }
     
     $font-Flaticon-nail-clipper: "\f100";
     $font-Flaticon-injury: "\f101";
@@ -116,3 +123,10 @@
     $font-Flaticon-blood-transfusion: "\f124";
     $font-Flaticon-passport: "\f125";
     $font-Flaticon-sonography: "\f126";
+    $font-Flaticon-info: "\f127";
+    $font-Flaticon-phone: "\f128";
+    $font-Flaticon-call: "\f129";
+    $font-Flaticon-files-copy-interface-symbol: "\f12a";
+    $font-Flaticon-message: "\f12b";
+    $font-Flaticon-calendar: "\f12c";
+    $font-Flaticon-facebook-1: "\f12d";
