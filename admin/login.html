@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <!--#region ################ LOGIN PANEL ################ -->
+    <h1>Panel Administracyjny</h1>
+    <div id="login-container" class="container">
+        <h2>Logowanie</h2>
+        <div class="row mt-5">
+            <div class="col-10 offset-1 col-lg-4 offset-lg-4 login-panel shadow-sm p-0">
+                <div class="content">
+                    <form id="login-form d-flex">
+                        <div class="formSegment justify-content-center">
+                            <label for="loginTF">Login: </label>
+                            <input class="ml-2" type="text" name="loginTF" id="loginTF" size="25" required>
+                        </div>
+                        <div class="formSegment justify-content-center">
+                            <label for="passwordTF">Hasło: </label>
+                            <input class="ml-2" type="password" name="passwordTF" id="passwordTF" size="25" required>
+                        </div>
+                        <div style="height: 80px;">
+                            <div id="loading-spinner" class="d-none">
+                                <div class="d-flex justify-content-center">
+                                    <div  class="spinner-border text-secondary" role="status">
+                                        <span class="sr-only"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+
+                        <div class="w-100 d-flex justify-content-center mt-0">
+                            <button id="loginBTN">Zaloguj</button>
+                        </div>
+                        <div id="login-info" class="w-100 d-flex justify-content-center">
+                            
+                        </div>
+                    </form>
+                </div>
+                <!-- <div id="wrong-password" class="alert alert-danger mt-5 d-none" role="alert">
+                    <strong>Błąd!</strong> Nazwa użytkownika lub hasło są niepoprawne.
+                </div> -->
+                
+                
+            </div>
+        </div>
+    
+    </div>
+
+    <!--#endregion ################################ -->
+
+
+    <!--#region ################## FIREBASE ################ -->
+
+    <!-- The core Firebase JS  -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+
+    <!-- https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-storage.js"></script>
+
+    <script>
+    // Firebase configuration
+
+    // var firebaseConfig = {
+    //     apiKey: "AIzaSyDUK7Uh7ORs7-9PJ9WGzpkP9z655OtdwWU",
+    //     authDomain: "fir-web-test-20e78.firebaseapp.com",
+    //     databaseURL: "https://fir-web-test-20e78-default-rtdb.europe-west1.firebasedatabase.app",
+    //     projectId: "fir-web-test-20e78",
+    //     storageBucket: "fir-web-test-20e78.appspot.com",
+    //     messagingSenderId: "1031959450197",
+    //     appId: "1:1031959450197:web:20ed2299c438c543b53adc"
+    // };
+
+    var firebaseConfig = {
+    apiKey: "AIzaSyDshB_HhqKpihTK8EZgsq2YLKzR86i0mDQ",
+    authDomain: "vet-cms.firebaseapp.com",
+    projectId: "vet-cms",
+    storageBucket: "vet-cms.appspot.com",
+    messagingSenderId: "404803882426",
+    appId: "1:404803882426:web:b3757d57ae25f05f9c2183",
+    measurementId: "G-7642VE2F6W"
+  };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+    </script>
+
+    <!--#endregion ##########################################-->
+
+    <!--### jQuery ###-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--### bootstrap files ###-->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+
+    <script src="scripts/login.js"></script>
+</body>
+</html>
