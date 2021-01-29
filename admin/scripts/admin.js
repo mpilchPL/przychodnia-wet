@@ -34,6 +34,7 @@ const DOCUMENTS = { // references to documents
     about_doc: db.collection('aboutUs'),
 
 }
+let currentAboutUs = [];
 
 
 
@@ -58,6 +59,8 @@ auth.onAuthStateChanged( user => {
 /* #endregion ########################################### */
 
 $(document).ready(function () {
+    let firstElement = $('.sidebar-item-active').attr('data-target');
+    updateContent(firstElement, undefined);
     updateListeners();
 });
 
@@ -91,8 +94,8 @@ $('.sidebar-item').click(function (e) {
     let target = $(this).attr('data-target');
     if (target != undefined && !$(this).hasClass('sidebar-item-active')) {
         let currentElement = $('.sidebar-item-active');
-        updateContent(target, currentElement);
         console.log('updating content');
+        updateContent(target, currentElement);
     }
     setNavActiveElement(this);
 });
@@ -102,12 +105,11 @@ $('.sidebar-item').click(function (e) {
 
 
 
-
-
 function updateContent (newContent, oldContent) { 
+    checkForChanges(oldContent);
     switch(newContent) {
         case 'about-us-section':
-            checkForChanges(oldContent);
+            
 
             $('.content').html(ABOUT_US);  // set basic content
             updateListeners();
@@ -117,9 +119,11 @@ function updateContent (newContent, oldContent) {
                 docs.forEach(doc => {
                     documents.push(doc.data());
                 });
-                console.log(documents);
+                currentAboutUs = documents;
+                console.log(currentAboutUs);
                 $('#about-us-title').html(documents[0].title);
                 $('#about-us-content').html(documents[0].content);
+                console.log('content updated');
              })
 
              // TODO bedzie zmiana taktyki: onload ladujemy to co sie wyswielta na dzien dobry i
@@ -134,11 +138,13 @@ function updateContent (newContent, oldContent) {
 
         case 'services-section':
             //update section
+            
             $('.content').html('');  // set basic content
             console.log(newContent);
             break;
         case 'doctors-section':
             //update section
+            
             $('.content').html('');  // set basic content
             console.log(newContent);
             break;
@@ -168,13 +174,33 @@ function updateListeners() {
         $('.dialogue-confirm-outer').fadeIn(50);
         console.log($(this).attr('data-source'));
     });
-    // confirm save ( on dialogue window )
+
+    /* #region ################# CONFIRM DIALOGUE ################# */
     $('.closePopup').click(function (e) { 
-        e.preventDefault();
-        $('.dialogue-confirm-outer').fadeOut();
+            e.preventDefault();
+            $('.dialogue-confirm-outer').fadeOut();
     });
+
+    /* #endregion ########################################### */
+    
+    
 }
 
 function checkForChanges(content) {
+    if(content == undefined) return; //true only on pagelaod
 
+    const contentID = content.attr('data-target');
+    
+    switch (contentID) {
+        case 'about-us-section':
+            console.log(contentID);
+            let currentTitle = $('#about-us-title').html();
+            let currentContent = $('#about-us-content').html();
+            console.log(currentAboutUs[0].content);
+
+            //TODO compare these two and return on no changes or popup dialogue on changes
+            break;
+        default:
+            break;
+    }
 }

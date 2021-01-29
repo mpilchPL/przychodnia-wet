@@ -170,6 +170,11 @@ textarea {
     background-color: #1a1a1a;
 }
 
+.sidebar-list li {
+    /* margin-top: 5px; */
+    font-size: 1.2em;
+}
+
 /* #region DIALOGUE POPUP WINDOW */
 
 .dialogue-content {
